@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/contato.css">
+	<title>Portifolio</title>
+</head>
+<body>
+	<header>
+		<h1>Ramon de Guimarães</h1>
+	</header>
+	<nav>
+		<a href="../index.html">Home</a>
+		<a href="sobre.html">Sobre</a>
+		<a href="contato.html" id="destaque">Contatos</a>
+	</nav>
+
+	<section id="container" id="foto">
+		<div id="mensagem">		
+			<form action="/comentario.php" method="post"> 
+
+				<label>Nome: </label>
+				<input type="text" name="tNome" id="idNome" placeholder="Nome completo">
+				<br>	
+				<label>Email: </label>
+				<input type="email" name="tEmail" id="idEmail" placeholder="email@email.com">
+				<br>
+				<label>Mensagem: </label>
+				<textarea placeholder="Mensagem..." id="idComentario"></textarea>
+				<br>
+				<label>&nbsp</label>
+				<input type="submit" name="bEnviar" id="idEnviar" value="Enviar">
+
+			</form>
+		</div>
+	</section>
+
+	<footer class="gamb">
+
+		<div id="contatos">
+
+			<div class="icons">
+				<a href="https://github.com/user-29A"><img src="../img/github.png"></a>
+			</div>
+
+			<div class="icons">
+				<a href="https://pt-br.facebook.com/"><img src="../img/facebook.png"></a>
+			</div>
+
+			<div class="icons">
+				<a href="https://br.linkedin.com/"><img src="../img/linkedin.png"></a>
+			</div>
+
+			<div class="icons">
+				<a href="https://twitter.com/?lang=pt-br"><img src="../img/twitter.png"></a>
+			</div>
+
+			<div class="icons">
+				<a href="https://plus.google.com/u/1/117673711021027067792"><img src="../img/g+.png"></a>
+			</div>
+
+			<div class="clear">
+			</div>
+
+		</div>
+	</footer>
+	
+</body>
+</html>

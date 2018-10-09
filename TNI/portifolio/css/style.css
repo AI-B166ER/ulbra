@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #f2f2f2;
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+header{
+	width: 100%;
+	padding: 1.5em 0em 1.5em 0em;
+	text-align: center;
+	box-shadow: 1px 1px 5px #d8d8d8;
+	background-color: #ffffff;
+}
+
+header h1{
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+nav{
+	background-color: #fff;
+	text-align: center;
+	padding: 0em 0em 1em 0em;
+	width: 100%;
+}
+
+nav a{
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+	margin: 0 1.5em 0 1.5em;
+}
+
+footer{
+   text-align: center;
+   width:100%;
+   background-color: white;
+   padding: 1em 0 1em 0;
+}
+
+footer .icons{
+	display: inline-block;
+	width: 3%;
+	margin: 0.3em;
+}
+
+.icons img{
+	width: 100%;
+}
+
+#destaque{
+	font-weight: bold;
+}
+
+a:link {
+    color: #999999;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999999;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #808080;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#container{
+	margin: 1em auto 1em auto;
+	padding: 1em 1em 1em 1em;
+	background-color: white;
+	width: 80%;
+	height: 100%;
+}
+
+.gamb{
+	position: fixed;
+	bottom: 0;
+}
+
+.clear{
+	clear: both;
+}

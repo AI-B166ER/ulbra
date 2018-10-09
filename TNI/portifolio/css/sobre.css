@@ -1,0 +1,23 @@
+#foto{
+	width: 20%;
+	min-width: 200px;
+	margin: 0 auto 0 auto;
+}
+
+#foto img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+article{
+	word-spacing: 0.2em;
+	margin: 0 auto 0 auto;
+	width: 80%;
+	padding: 1em;
+}
+
+#texto{
+	display: block;
+	width: 50%;
+	margin: 0 auto 0 auto;
+}

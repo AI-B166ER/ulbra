@@ -1,0 +1,31 @@
+#mensagem{
+	width: 50%;
+	margin: 0 auto 0 auto;
+}
+#idComentario{
+	width: 45em;
+	height: 25em;
+	padding: 1em;
+}
+
+#idNome{
+	width: 46em
+}
+
+#idEmail{
+	width: 46em
+}
+
+#idEnviar{
+	width: 47em;
+}	
+
+input{
+	margin: 0.1em;
+}
+
+label{
+	width: 100px;
+	float: left;
+	display: block;
+}

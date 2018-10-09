@@ -1,0 +1,83 @@
+body{
+	font-family:sans-serif;
+}
+
+p{
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+h2{
+	color: green;
+	border-bottom: 5px dotted;
+}
+
+.linha{
+	clear: both;
+}
+
+.a{
+	clear: both;
+	width: 10%;
+	float: left;
+}
+
+.circulo{
+	float: right;
+	background-color: green;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.iten{
+	float: left;
+}
+
+#tudo{
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+}
+
+#esquerda{
+	margin-right: 10px;
+	width: auto;
+	float: left;
+}
+
+#direita{
+	text-align: left;
+	float: left;
+}
+
+#obj{
+	text-align: left;
+	clear: both;
+}
+
+#formacao{
+	text-align: left;
+}
+
+#habi{
+	text-align: left;
+}
+
+#ling{
+	text-align: left;
+}
+
+#perso{
+	text-align: left;
+}
+
+#coluna1{
+	width: 45%;
+	float: left;
+}
+
+#coluna3{
+	float: right;
+	width: 45%;
+}
