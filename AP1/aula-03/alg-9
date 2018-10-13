@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   num1, num2, r: inteiro
+inicio
+      escreva("Numero 1: ")
+      leia(num1)
+      escreva("Numero 2: ")
+      leia(num2)
+     r <- num1 mod num2
+      escreva("Resto: ",r)
+fimalgoritmo
+

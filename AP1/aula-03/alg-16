@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+  quilos, gramas, consumo1, consumo2, resto, x: real
+inicio
+      escreva("Quantos quilos tem o saco de ração? ")
+      leia(quilos)
+      escreva("Quanto em gramas o gato 1 come de ração por dia? ")
+      leia(consumo1)
+      escreva("Quanto em gramas o gato 2 come de ração por dia? ")
+      leia(consumo2)
+      
+      gramas <- quilos*1000
+      x  <- (consumo1 + consumo2)*5
+      resto <- gramas - x
+      resto <- resto / 1000
+      
+      escreva("Depois de 5 dias restara ", resto, "KG de ração no saco")
+fimalgoritmo
+

@@ -1,0 +1,19 @@
+Algoritmo "semnome"
+Var
+	a, b, r: inteiro
+Inicio
+	escreva("Valor A: ")
+	leia(a)
+	escreva("Valor B: ")
+	leia(b)
+
+	r <- a+b
+	escreval("a + b = ", r)
+	r <- a-b
+	escreval("a - b = ", r)
+	r <- a*b
+	escreval("a x b = ", r)
+	r <- a div b
+	escreva("a / b =", r)
+Fimalgoritmo
+

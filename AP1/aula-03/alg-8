@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   custo, r: real
+   qtd: inteiro
+inicio
+      escreva("Preço de produto: R$")
+      leia(custo)
+      escreva("Quantidade: ")
+      leia(qtd)      
+      r <- custo * qtd
+     escreva("Total: ",r)
+fimalgoritmo
+

@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   degrau, altura, result: inteiro
+inicio
+      escreva("Qual a altura de cada degrau (em metros)? ")
+      leia(degrau)
+      escreva("Qual a altura que você quer alcançar (em metros)? ")
+      leia(altura)
+      result <- altura / degrau
+      escreva("Você deve subir ", result, " degraus")
+fimalgoritmo
+

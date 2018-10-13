@@ -1,0 +1,11 @@
+algoritmo "semnome"
+var
+   numCoelhos: inteiro
+   custo: real
+inicio
+      escreva("Numero de coelhos: ")
+      leia(numCoelhos)
+      custo <- (numCoelhos * 0.70)/18+10
+      escreva("Custo: ", custo)
+fimalgoritmo
+

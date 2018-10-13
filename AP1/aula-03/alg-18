@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   quilow, consumo, result, desconto: real
+inicio
+      escreva("Qual o valor do quilowatt? ")
+      leia(quilow)
+      escreva("Qual o consumo em quilowatts da sua casa? ")
+      leia(consumo)
+      
+      result <- consumo * quilow
+      desconto <- 15 * result / 100
+      
+      escreval("O consumo da sua residencia é de R$", result)
+      escreva("O consumo da sua residencia com 15% de desconto é de R$", desconto)
+fimalgoritmo
+

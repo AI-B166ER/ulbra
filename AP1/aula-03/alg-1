@@ -1,0 +1,16 @@
+Algoritmo "salario"
+Var
+	horas: inteiro
+	funcId: inteiro
+	salario: real
+Inicio
+	escreva("Id do funcionario: ")
+	leia(funcId)
+	escreva("Horas trabalhadas: ")
+	leia(horas)
+	escreva("Salario por hora: ")
+	leia(salario)
+	escreva("Funcionario ", funcId, " recebe ", horas*salario)
+
+Fimalgoritmo
+

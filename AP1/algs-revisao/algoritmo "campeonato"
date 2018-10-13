@@ -1,0 +1,28 @@
+algoritmo "campeonato"
+var
+	peso, altura: real
+inicioAlgoritmo
+	
+	Escreva("Peso: ", peso)
+	Leia(peso)
+	
+	Escreva("Altura: ", altura)
+	Leia(altura)
+
+	se ( (peso >= 70) e (peso <= 80) ) e ( ( altura >= 1.75) e (altura <= 1.90) ) entao
+		Escreva("Aceito")
+	senao
+		se ( (peso < 70) ou (peso > 80) ) e ( ( altura < 1.75) ou (altura > 1.90) ) entao
+				Escreva("Totalmente Recusado ")
+		senao
+			se (peso < 70) ou (peso > 80) entao
+				Escreva("Recusado por Peso")
+			senao
+				se ( altura < 1.75) ou (altura > 1.90)entao
+					Escreva("Recusado por altura")
+				fimse
+			fimse
+		fimse
+	fimse
+
+fimAlgoritmo

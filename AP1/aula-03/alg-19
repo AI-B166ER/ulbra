@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   valor1, valor2, total: real
+   cod1, cod2, quant1, quant2: inteiro
+
+inicio
+      escreva("Qual o codigo da peça 1? ")
+      leia(cod1)
+      escreva("Qual quandidade de peças 1 vendidas? ")
+      leia(quant1)
+      escreva("Qual o valor da peça 1?")
+      leia(valor1)
+      escreva("Qual o codigo da peça 2? ")
+      leia(cod2)
+      escreva("Qual quandidade de peças 2 vendidas? ")
+      leia(quant2)
+      escreva("Qual o valor da peça 2?")
+      leia(valor2)
+      total <- valor1 * quant1 + quant2 * valor2
+      escreva("Total: R$", total )
+fimalgoritmo
+

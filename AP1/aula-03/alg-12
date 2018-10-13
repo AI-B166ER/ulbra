@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   salario, salarioReajustado: real
+inicio 
+      Escreva("Salario atual: R$")
+      leia(salario)
+       salarioReajustado <- salario+(25*salario)/100
+      //salario <- salario+(25*salario)/100
+      escreva("Salario com almento de 25%: R$", salarioReajustado)
+      //escreva("Salario com almento de 25%: R$", salario) 
+fimalgoritmo
+

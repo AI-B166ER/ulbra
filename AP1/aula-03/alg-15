@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   idade2050, idade, anoAtual, ano: inteiro
+inicio
+      escreva("Ano de nascimento: ")
+      leia(ano)
+      escreva("Ano atual: ")
+      leia(anoAtual)
+      idade <- anoAtual - ano
+      idade2050 <- idade + (2050-anoAtual)
+      escreva("Você tem ", idade," anos, em 2050 você terá, ",idade2050)
+fimalgoritmo
+

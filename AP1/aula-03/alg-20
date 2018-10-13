@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   x1, x2, x: inteiro
+inicio
+      escreva("digite o valor 1 ")
+      leia(x1)
+      escreva("digite o valor 2 ")
+      leia(x2)
+      x <- x1+x2
+      escreva("a soma dos valores é ", x)
+fimalgoritmo
+

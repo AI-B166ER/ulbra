@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+   a, b, h: real
+inicio
+      escreva("Base: ")
+      leia(b)
+      escreva("Altura: ")
+      leia(h)
+      a <- (b*h)/2
+      escreva("area = ", a)
+fimalgoritmo
+

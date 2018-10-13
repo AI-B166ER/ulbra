@@ -1,0 +1,42 @@
+algoritmo "casa"
+var
+	tipoComodo; inteiro
+	largComodo, compComodo, metroQuadrado: real
+
+inicioAlgoritmo
+	
+	Escreval("Tipo de comodo: ")
+	Escreval("1 - Quarto")
+	Escreval("2 - Cozinha")
+	Escreval("3 - Banheiro")
+	Escreval("4 - Escritorio")
+	Escreval("5 - Sala)
+	Leia(tipoComodo)
+
+	Escreva("Comprimento do comodo: ")
+	Leia(compComodo)
+
+	Escreva("Largura do comodo: ")
+	Leia(largComodo)
+
+	metroQuadrado <- largComodo * compComodo
+
+	escolha tipoComodo
+	caso 1
+		lampadas <- metroQuadrado DIV 15
+	caso 2
+		lampadas <- metroQuadrado DIV 20 
+	caso 3
+		lampadas <- metroQuadrado DIV 18
+	caso 4
+		lampadas <- metroQuadrado DIV 20
+	caso 5
+		lampadas <- metroQuadrado DIV 18
+	outrocaso
+		Escreva("Você deve escolher uma das opcoes disponiveis")
+	fim-escolha
+
+	Escreva("Você vai precisar de ", lampadas, " lampadas")
+
+
+fimAlgoritmo

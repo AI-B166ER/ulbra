@@ -1,0 +1,13 @@
+algoritmo "semnome"
+var
+   sBase: real
+inicio
+      escreva("salario base: R$")
+      leia(sBase)
+      sBase <- sBase + (5*sBase)/100
+      sBase <- sBase - (7*sBase)/100
+      escreva("Salario: ", sBase) 
+
+      
+fimalgoritmo
+

@@ -1,0 +1,11 @@
+algoritmo "semnome"
+var
+   num: inteiro
+   r: real
+inicio
+      escreva("Numero: ")
+      leia(num)
+      r <- num ^ 2
+      escreva(num, " ao quadrado é ", r)
+fimalgoritmo
+

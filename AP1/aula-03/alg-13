@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   preco, desconto: real
+inicio
+      escreva("Preco do produto: R$")
+      leia(preco)
+      escreva("Desconto em %: ")
+      leia(desconto)
+      preco <- preco - (desconto*preco)/100
+      escreva("preco final: R$", preco) 
+
+      
+fimalgoritmo
+

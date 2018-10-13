@@ -1,0 +1,16 @@
+Algoritmo "semnome"
+Var
+   a, b, c, r: real
+Inicio
+   escreva("Valor A: ")
+   leia(a)
+   escreva("Valor B: ")
+   leia(b)
+   escreva("Valor C: ")
+   leia(c)
+
+   r <- (a+b+c)/3
+   escreva(r)
+
+Fimalgoritmo
+

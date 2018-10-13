@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   custo, venda, r: real
+inicio
+      escreva("Preço de custo: R$")
+      leia(custo)
+      escreva("Preço de venda: R$")
+      leia(venda)
+      
+      r <- venda - custo
+      escreva("Lucro: ",r)
+
+fimalgoritmo
+

@@ -1,0 +1,180 @@
+01. Faça um algoritmo para ler o nome e a idade de um nadador e classifique-o em uma das seguintes categorias:
+Infantil = 5 a 10 anos
+Juvenil = 11 a 17 anos
+Adulto = maiores ou iguais a 18 anos.     
+            No final, exiba na tela seu nome e a sua categoria.
+
+algoritmo "semnome"
+var
+   nome: caractere
+   idade: inteiro
+inicio
+      escreva("Nome do nadador: ")
+      leia(nome)
+      escreva("Idade do nadador: ")
+      leia(idade)
+      se (idade >= 5) e (idade <= 10) entao
+             escreval("Nome: ", nome)
+             escreva("Categoria: Infantil")
+      senao
+               se (idade >= 11) e (idade <= 17) entao
+                      escreval("Nome: ", nome)
+                      escreva("Categoria: Juvenil")
+               senao
+                        se idade >= 18 entao
+                               escreva("Nome: ", nome)
+                               escreva("Categoria: Adulto")
+                        senao
+                             escreva("A idade mínima é 5 anos!")
+                        fimse
+               fimse
+      fimse
+fimalgoritmo
+
+
+ 02. Uma loja de eletrodomésticos paga seus vendedores com um salário fixo e mais uma comissão. A comissão é calculada da seguinte forma: se o vendedor vendeu mais de R$15.000,00 no mês ganha a comissão de 25% das vendas. Se vendeu entre R$5.000,00 e R$15.000,00, ganha uma comissão de 18% e se vendeu menos que isso, ganha comissão de 7%. Faça um algoritmo  que leia o salário fixo do vendedor, o valor das vendas mensais e calcule o salário total que ele irá ganhar neste mês. Ao final, mostre o salário na tela.
+algoritmo "semnome"
+var
+   total, fixo, com, vendas: real
+inicio
+      escreva("Salario fixo do vendedor: ")
+      leia(fixo)
+      escreva("Total em vendas: ")
+      leia(vendas)
+
+      se vendas >= 15000 entao
+         com <- (vendas*25)/100
+         total <- fixo + com
+  senao
+           se (vendas >= 5000) e (vendas < 15000) entao
+              com <- (vendas*18)/100
+              total <- fixo + com
+           senao
+                com <- (vendas*7)/100
+                total <- fixo + com
+           fimse
+      fimse
+      escreva("salario + com:  ", total)
+fimalgoritmo
+
+03. Faça um algoritmo  para ler dois números e dividir o maior pelo menor. Em seguida verificar se o valor obtido com a divisão é par ou ímpar. Escrever na tela os dois números, o resultado da divisão e a mensagem: é par ou é ímpar
+algoritmo "semnome"
+var
+   num1, num2, r: real
+inicio
+      escreva("Informe o primeiro numero: ")
+      leia(num1)
+      escreva("Informe o segundo numero: ")
+      leia(num2)
+      
+      se num1 >= num2 entao
+             r <- num1/num2
+        resto <- num1 mod num2
+              escreval("A divisão de ", num1, " por ", num2, " resultou em ", r)
+      senao
+               r <- num2/num1
+        resto <- num1 mod num2
+                escreval("A divisão de ", num2, " por ", num1, " resultou em ", r)
+      fimse
+      
+      //verificar se é par ou impar
+      se resto <> 0 entao
+             escreva(r, " é um numero impar")
+      senao
+               escreva(r, " é um numero par")
+      fimse
+      
+fimalgoritmo
+
+04.  Uma loja fornece 5% de desconto para funcionários (F)e 10% de desconto para clientes especiais (E). Faça um algoritmo que calcule o valor total a ser pago por uma pessoa. O algoritmo deverá ler o valor total da compra efetuada e um código que identifique se o comprador é um cliente comum (C) ou um dos dois tipos de cliente que recebem desconto.
+
+algoritmo "loja"
+var
+   cliente: caracter
+   compras, total: real
+   
+inicio
+
+      escreva("Total das compras: ")
+      leia(compras)
+      
+      escreval("Selecione o tipo de cliente: ")
+      escreval("Funcionarios: F")
+      escreval("Clientes especiais: E")
+      escreval("Cliente comum: C")
+      leia(cliente)
+      
+      escolha cliente
+      caso "F"
+               total <- compras - compras*5/100
+               escreva("Total com desconto para funcionarios de 5%: ", total)
+      caso "E"
+               total <- compras - compras*10/100
+               escreva("Total com desconto para clientes especiais de 10%: ", total)
+      caso "C"
+               escreva("Total: ", compras)
+      outrocaso
+                   escreva("ERRO, ESSA OPÇÃO É INVALIDA!")
+      fimescolha
+ fimalgoritmo
+
+05.  Escrever um algoritmo que leia o código de identificação de um aluno e as suas três notas (3 provas + 1 nota referente aos exercícios). Calcular para cada aluno a média usando a fórmula: média = ( N1 + N2 * 2 + N3 * 3 + NE ) / 7. O algoritmo deve escrever o código do aluno, suas notas, a média e o conceito correspondente (ver tabela) e a mensagem "APROVADO" (conceito = A, B ou C) ou "REPROVADO".
+Média          | Conceito
+> =  9.0       | A
+>= 7.5 E < 9.0 | B
+>= 6.0 E < 7.5 | C
+>= 4.0 e < 6.0 | D
+< 4.0          | E
+
+algoritmo "media"
+var
+   cod: inteiro
+   nota1, nota2, nota3, notaE, media: real
+inicio
+      escreva("Codigo do aluno: ")
+      leia(cod)
+      escreva("Nota 1: ")
+      leia(nota1)
+      escreva("Nota 2: ")
+      leia(nota2)
+      escreva("Nota 3: ")
+      leia(nota3)
+      escreva("Nota exercicios: ")
+      leia(notaE)
+      
+      media <- ((nota1 + nota2) * 2 + nota3 * 3 + notaE )/7
+      
+      se media >= 9 entao
+         escreval("Aluno: ", cod)
+         escreval("Nota final: ", media)
+         escreval("Conceito: A")
+         escreva("Aprovado!")
+      senao
+               se media >= 7.5 entao
+              escreval("Aluno: ", cod)
+              escreval("Nota final: ", media)
+              escreval("Conceito: B")
+              escreva("Aprovado!")
+           senao
+                se media >= 6 entao
+                   escreval("Aluno: ", cod)
+                   escreval("Nota final: ", media)
+                   escreval("Conceito: C")
+                   escreva("Aprovado!")
+                senao
+                     se media >= 4 entao
+                        escreval("Aluno: ", cod)
+                        escreval("Nota final: ", media)
+                        escreval("Conceito: D")
+                        escreva("Reprovado!")
+                     senao
+                          escreval("Aluno: ", cod)
+                          escreval("Nota final: ", media)
+                          escreval("Conceito: E")
+                          escreva("Reprovado!")
+                             fimse
+                        fimse
+               fimse
+      fimse
+fimalgoritmo
+

@@ -1,0 +1,41 @@
+Algoritmo "banco"
+var
+	credEspec, salMed :real 
+inicioAlgoritmo
+	
+	escreva("Informe o saldo médio: ")
+	leia(salMed)
+
+	se (salMed >= 0 ) e ( salMed <= 400 ) entao
+		credEspec <- 0
+		Escreval("Saldo medio: R$", salMed)
+		Escreva("Credito especial: R$", credEspec)
+
+
+	senao
+		se (salMed >= 401 ) e ( salMed <= 600 ) entao
+			credEspec <- salMed * 20/100
+			Escreval("Saldo medio: R$", salMed)
+			Escreva("Credito especial: R$", credEspec)
+
+
+		senao
+			se (salMed >= 401 ) e ( salMed <= 800 ) entao
+			credEspec <- salMed * 30/100
+			Escreval("Saldo medio: R$", salMed)
+			Escreva("Credito especial: R$", credEspec)
+
+			senao
+				se salMed > 801 entao
+				credEspec <- salMed * 40/100
+				Escreval("Saldo medio: R$", salMed)
+				Escreva("Credito especial: R$", credEspec)
+				fimse
+
+			fimse
+
+		fimse
+
+	fimse
+
+fimAlgoritmo

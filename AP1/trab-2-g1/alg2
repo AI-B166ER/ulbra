@@ -1,0 +1,59 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 9/27/2018
+// Seção de Declarações
+var
+   x, idade: inteiro
+   sexo: caractere
+inicio
+// Seção de Comandos
+
+   escreva(“Informe a idade: ”)
+   leia(idade)
+   escreval(“Opções!”)
+   escreval(" 1 - Camiseta rosa")
+   escreval(" 2 - Camiseta azu")
+   escreval(" 3 - Camiseta preta")
+   escreval(" 4 - Camiseta laranja")
+   escreva("opção: ")
+   leia(x)
+
+
+   escolha x
+   caso 1
+        escreval("Selecionado: Camiseta rosa!")
+        escreva("O valor do ingresso é R$20,00")
+
+   caso 2
+
+        escreval("Selecionado: Camiseta azul!")
+        escreva("O valor do ingresso é R$30,00")
+
+   caso 3
+        escreval("Selecionado: Camiseta preta!")
+        escreval("Qual o sexo? (H ou M)")
+        leia(sexo)
+
+        se sexo = "M" entao
+           escreva("O valo do ingresso é R$ 10,00")
+        senao
+             se sexo = "H" entao
+                escreva("O valo do ingresso é R$ 15,00")
+             senao
+                  escreva("ERRO!!! opção errada")
+             fimse
+        fimse
+
+   caso 4
+
+        escreval("Selecionado: Camiseta laranja!")
+        escreva("O valor do ingresso é R$25,00")
+
+   outrocaso
+        escreva("OPÇÃO INVALIDA!")
+
+   fimescolha
+   
+   
+fimalgoritmo

@@ -1,0 +1,70 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 9/27/2018
+// Seção de Declarações
+var
+   x: inteiro
+   valor_venda, valor_final: real
+inicio
+// Seção de Comandos
+
+
+   escreva("Valor da venda: ")
+   leia(valor_venda)
+
+
+   escreval("Formas de pagamento")
+   escreval("1 - Venda a Vista - desconto de 10%")
+    escreval("2 - Venda a Prazo 30 dias - desconto de 5%")
+    escreval("3 - Venda a Prazo 60 dias - mesmo preço")
+    escreval("4 - Venda a Prazo 90 dias - acréscimo de 5%")
+    escreval("5 - Venda com cartão de débito - desconto de 8%")
+    escreval("6 - Venda com cartão de crédito - desconto de 7%")
+
+    leia(x)
+    
+   escolha x
+        caso 1
+            escreval("Selecionado: Venda a vista")
+
+            valor_final <- valor_venda - 10*valor_venda/100
+
+            escreva("Valor final: ", valor_final)
+
+        caso 2
+            escreva("Selecionado: Venda a prazo 30 dais")
+            
+            valor_final <- valor_venda - 5*valor_venda/100
+
+            escreva("Valor final: ", valor_final)
+            
+        caso 3
+            escreva("Selecionado: Venda a prazo 60 dais")
+            
+            escreva("Valor final: ", valor_venda)
+        caso 4
+            escreva("Selecionado: Venda a prazo 90 dais")
+            
+            valor_final <- valor_venda + 5*valor_venda/100
+
+            escreva("Valor final: ", valor_final)
+        caso 5
+            escreva("Selecionado: Venda cartão de debito")
+            
+            valor_final <- valor_venda - 8*valor_venda/100
+
+            escreva("Valor final: ", valor_final)
+            
+        caso 6
+            escreva("Selecionado: Vendda cartão de crédito")
+            
+            valor_final <- valor_venda - 7*valor_venda/100
+
+            escreva("Valor final: ", valor_final)
+      outrocaso
+     
+         escreva("Opção invalida!")
+        fimescolha
+    
+fimalgoritmo

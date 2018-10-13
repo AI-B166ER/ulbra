@@ -1,0 +1,71 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 9/27/2018
+// Seção de Declarações
+var
+   aulas: inteiro
+   nota_menor, nota_sub, nota_g1, nota_g2, frequencia, nota_final: real
+inicio
+// Seção de Comandos
+
+
+   escreva("Nota G1: ")
+   leia(nota_g1)
+   
+   escreva("nota G2: ")
+   leia(nota_g2)
+   
+   escreva("Aulas: ")
+   leia(aulas)
+   
+   frequencia <- aulas*100/68
+   
+   nota_final <- (nota_g1+(nota_g2*2))/3
+   
+
+   se (nota_final < 6) e (frequencia > 75 ) entao
+      escreval("PODE FAZER PROVA DE SUBTITUIÇÃO!")
+      escreval("Nota de substituição: ")
+      leia(nota_sub)
+      
+      se (nota_g1 < nota_g2)entao
+         nota_g1 <- nota_sub
+      senao
+           nota_g2 <- nota_sub
+      fimse
+      
+      nota_final <- (nota_g1+(nota_g2*2))/3
+      
+      se (nota_final < 6) e (frequencia < 75 ) entao
+           escreval("REPROVADO!")
+           escreval("Nota final: ", nota_final)
+           escreva("Frequencia: ", frequencia)
+      senao
+           se (nota_final > 6) e (frequencia > 75) entao
+                escreval("APROVADO!")
+                escreval("Nota final: ", nota_final)
+                escreva("Frequencia: ", frequencia)
+             senao
+                  escreva("ERRO!")
+             fimse
+      fimse
+
+    senao
+        se (nota_final < 6) e (frequencia < 75 ) entao
+           escreval("REPROVADO!")
+           escreval("Nota final: ", nota_final)
+           escreva("Frequencia: ", frequencia)
+        senao
+             se (nota_final > 6) e (frequencia > 75) entao
+                escreval("APROVADO!")
+                escreval("Nota final: ", nota_final)
+                escreva("Frequencia: ", frequencia)
+             senao
+                  escreva("ERRO!")
+             fimse
+        fimse
+   fimse
+
+   
+fimalgoritmo
