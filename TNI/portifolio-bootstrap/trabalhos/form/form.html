@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div id="tudo">
+		<header>
+			<h1>Cadastro ABC</h1>
+		</header>
+		<form>
+			<h2 class="titulo">Dados Basicos</h2>
+			<fieldset>
+				<div class="labels">
+					<label>Nome: </label>
+				</div>
+				<input type="text" name="nome" placeholder="Nome">
+				<input type="text" name="sobrenome" placeholder="Sobrenome">
+				<br>
+				<br>
+				<div class="labels">
+					<label>RG: </label>
+				</div>
+				<input type="text" name="rg" placeholder="9999999999" maxlength="10">
+				<br>
+				<br>
+				<div class="labels">
+					<label>CPF: </label>
+				</div>
+				<input type="text" name="cpf1" maxlength="12" placeholder="9999999999">
+				<input type="tex" name="cpf2" maxlength="2" placeholder="99" id="cpf2">
+				<br>
+				<br>
+				<div class="labels">
+					<label>Sexo: </label>
+				</div>
+
+				<input type="radio" name="genero" value="masculino" checked>
+				<label>Masculino</label>
+				<input type="radio" name="genero" value="feminino">
+				<label>Feminino</label>
+				<input type="radio" name="genero" value="outros">
+				<label>Outros</label>
+				<br>
+				<br>
+				
+				<div class="labels">
+					<label>Filiação:</label>
+				</div>
+				
+				<br>
+				<br>
+				
+				<div class="labels">
+					<label>Pai: </label>
+				</div>
+				<input type="text" name="pai" placeholder="Nome">
+				<input type="tex" name="pai" placeholder="Sobrenome">
+				<br>
+				<br>
+				<div class="labels">
+					<label>Mãe: </label>
+				</div>
+				<input type="text" name="mae" placeholder="Nome">
+				<input type="tex" name="mae" placeholder="Sobrenome">
+				<br>
+				<br>
+			</fieldset>
+			<h2 class="titulo">Dados de Endereço</h2>
+			<fieldset>
+				<div class="labels">
+					<label>Endereço: </label>
+				</div>
+				<input type="text" name="rua" placeholder="Rua" id="rua">
+				<input type="text" name="numeroEnd" placeholder="Numero" id="numeroEnd">
+				<br>
+				<br>
+				<div class="labels">
+					<p></p>
+				</div>
+				<input type="text" name="bairro" placeholder="Bairro">
+				<input type="text" name="complemento" placeholder="Complemento" class="large">
+				<br>
+				<br>
+				<div class="labels">
+					<p></p>
+				</div>	
+				<input type="text" name="cep" placeholder="CEP" maxlength="5">
+				<label for="estado">Estado:</label>
+				<select name="estado" id="estado">
+					<option value="AC">Acre</option>
+					<option value="AL">Alagoas</option>
+					<option value="AP">Amapá</option>
+					<option value="AM">Amazonas</option>
+					<option value="BA">Bahia</option>
+					<option value="CE">Ceará</option>
+					<option value="DF">Distrito Federal</option>
+					<option value="ES">Espírito Santo</option>
+					<option value="GO">Goiás</option>
+					<option value="MA">Maranhão</option>
+					<option value="MT">Mato Grosso</option>
+					<option value="MS">Mato Grosso do Sul</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="PA">Pará</option>
+					<option value="PB">Paraíba</option>
+					<option value="PR">Paraná</option>
+					<option value="PE">Pernambuco</option>
+					<option value="PI">Piauí</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="RN">Rio Grande do Norte</option>
+					<option value="RS">Rio Grande do Sul</option>
+					<option value="RO">Rondônia</option>
+					<option value="RR">Roraima</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="SP">São Paulo</option>
+					<option value="SE">Sergipe</option>
+					<option value="TO">Tocantins</option>
+				</select>
+				<br>
+				<br>
+			</fieldset>
+			<h2 class="titulo">Dados de Contato</h2>
+			<fieldset>
+				<div class="labels">Telefone: </div>
+				<input type="text" name="ddd" placeholder="99" id="ddd" maxlength="2">
+				<input type="text" name="numero" placeholder="999999999" maxlength="9" id="numero">
+				<br>
+				<br>
+				<div class="labels">
+					<label>Email: </label>
+				</div>
+				<input type="email" name="email" placeholder="email@email.com">
+				<br>
+				<br>
+				<label class="labels">Whatsapp: </label>
+				<input type="radio" name="whatsapp" value="sim" checked>
+				<label>Sim</label>
+				<input type="radio" name="whatsapp" value="nao">
+				<label>Não</label>
+			</fieldset>
+			<br>
+			<input type="submit" value="Enviar"> 
+			<input type="reset" value="Limpar">
+
+		</form>
+	</div>
+</body>
+</html>

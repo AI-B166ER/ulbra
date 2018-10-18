@@ -1,0 +1,18 @@
+.imagem{
+	width: 700px;
+	min-width: 250px;
+}
+
+
+.legenda{
+	display: block;
+	float: left;
+	width: 48%;
+	margin: 1% 0.5% 1% 0.5%;
+	min-width: 250px;
+}
+
+#git{
+	width: 20px;
+	margin-right: 0.5em;
+}

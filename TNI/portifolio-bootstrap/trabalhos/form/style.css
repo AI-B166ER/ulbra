@@ -1,0 +1,48 @@
+header{
+	text-align: center;
+}
+
+.titulo{
+	border-bottom: solid 1px black;
+	margin: 1em 0 1em 0;
+}
+
+
+#tudo{
+	width: 50%;
+	margin: 0 auto 0 auto; 
+}
+
+.labels{
+	margin: 0 0 0 0.5em;
+	float: left;
+	width: 100px;
+}
+
+#cpf2{
+	width: 2em;
+}
+
+#numeroEnd{
+	width: 4em;
+}
+
+#rua{
+	width: 20em;
+}
+
+.large{
+	width: 13.5em;
+}
+
+#ddd{
+	width: 2em;
+}
+
+#numero{
+	width: 7.9em;
+}
+
+#estado{
+	width: 10em;
+}

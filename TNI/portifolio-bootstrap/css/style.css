@@ -1,0 +1,71 @@
+body{
+	background-color: #f2f2f2 !important; 
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+header{
+	width: 100%;
+	padding: 1.5em 0em 1.5em 0em;
+	text-align: center;
+	box-shadow: 1px 1px 5px #d8d8d8;
+	background-color: #ffffff;
+}
+
+header h1{
+	font-weight: bold;
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+}
+
+footer{
+   text-align: center;
+   width:100%;
+   background-color: white;
+   padding: 1em 0 1em 0;
+}
+
+.icons{
+	width: 50px;
+	min-width: 20px;
+	margin: 0.3em;
+}
+
+#destaque{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+a:link {
+    color: #999999;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999999;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #808080 !important;
+    background-color: transparent;
+}
+
+a:active{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.corpo{
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	margin: 1.5em 0 1.5em;
+	background-color: white !important;
+}
+
+.gamb{
+	position: fixed;
+	bottom: 0;
+}
